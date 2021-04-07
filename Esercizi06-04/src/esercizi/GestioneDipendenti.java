@@ -23,6 +23,7 @@ public class GestioneDipendenti {
 		dip3.stampaDatiDipendente();
 		dip4.stampaDatiDipendente();
 		
+		
 		//double somma = Dipendente.calcolaPaga(dip1, 5);
 		//somma += Dipendente.calcolaPaga(dip2, 5);
 		//somma += Dipendente.calcolaPaga(dip3, 5);
