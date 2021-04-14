@@ -1,4 +1,4 @@
-package giorno1.eccezioni;
+package settimana3.giorno1.eccezioni;
 
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
