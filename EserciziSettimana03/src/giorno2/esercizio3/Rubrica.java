@@ -6,23 +6,23 @@ import java.util.Map.Entry;
 
 public class Rubrica {
 	
-	private Map<String, String> rubrica = new HashMap<>();
+	private Map<Persona, String> rubrica = new HashMap<>();
 	
-	public void inserisciContatto(String nome, String numero) {
+	public void inserisciContatto(Persona nome, String numero) {
 		rubrica.put(nome, numero);
 	}
 	
-	public void rimuoviContatto (String nome) {
+	public void rimuoviContatto (Persona nome) {
 		rubrica.remove(nome);
 	}
 	
-	public String ricercaConNome (String nome) { 
+	public String ricercaConNome (Persona nome) { 
 //		rubrica.containsKey(nome);
 		return rubrica.get(nome);
 	}
 	
-	public String ricercaConNumero (String numero) {
-		for (Entry<String, String> coppia : rubrica.entrySet()) {
+	public Persona ricercaConNumero (String numero) {
+		for (Entry<Persona, String> coppia : rubrica.entrySet()) {
 			if (coppia.getValue().equals(numero)) {
 				return coppia.getKey();
 			}
@@ -32,11 +32,11 @@ public class Rubrica {
 	
 	public void stampaContatti() {
 		System.out.println("Elenco dei contatti:");
-		for(Entry<String, String> coppia : rubrica.entrySet()) {
+		for(Entry<Persona, String> coppia : rubrica.entrySet()) {
 			System.out.println("Nome: ");
-			System.out.println(coppia.getKey());
+			System.out.println(coppia.getKey().getNome());
 			System.out.println("Numero telefonico: ");
-			System.out.println(coppia.getValue());
+			System.out.println(coppia.getValue() + "\n");
 		}
 	}
 	

@@ -1,0 +1,6 @@
+Rivista,cde234,model,2010,20,MENSILE
+Rivista,bdg827,playgirl,2005,21,SETTIMANALE
+Libro,fnjkdsf,Nuotare,2012,343,SuperMario,Sport
+Libro,jdf8234,playboy,2009,302,Patrick,modellismo
+Libro,abc123,java for dummies,2005,800,Riccardo,istruzione
+Libro,abc234,javadoc,2014,400,Patrick,informatica
