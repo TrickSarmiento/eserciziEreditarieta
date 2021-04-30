@@ -38,9 +38,7 @@ public class Controller extends HttpServlet {
 	}
 	
 	FornitoreDAO forn = new FornitoreDAO();
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -57,7 +55,7 @@ public class Controller extends HttpServlet {
 				selezioneAzione(request, response);
 				break;
 			default:
-				response.sendRedirect("index.jsp");
+				mostraPaginaDiErrore(request, response);
 
 			}
 
